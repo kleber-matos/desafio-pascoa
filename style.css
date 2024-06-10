@@ -16,16 +16,15 @@ header {
   height: 90vh;
 }
 
-header section {
+.menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 10vh;
-
   background-color: rgba(0, 0, 0, 0.288);
 }
 
-header div {
+.menu div {
   background-color: white;
   height: 100%;
   width: 30vw;
@@ -35,18 +34,49 @@ header div {
   justify-content: space-evenly;
 }
 
-header ul {
-  border: solid;
+.menu ul {
   display: flex;
   justify-content: space-evenly;
   width: 60%;
   max-width: 600px;
 }
-header a {
-  color: white;
+.menu a {
+  color: orange;
   font-size: 1.2em;
 }
 
-header a :hover {
+.menu a:hover {
   border-bottom: solid white;
+}
+
+.slider {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 60vh;
+}
+
+.slider h2 {
+  color: white;
+  width: 50vw;
+  font-size: 2.5em;
+  max-width: 500px;
+  margin-left: 1rem;
+}
+
+.slider div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider button {
+  width: 10%;
+  height: 5vh;
+  border: none;
+  max-width: 50px;
+  cursor: pointer;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: white;
+  background-color: orange;
 }
