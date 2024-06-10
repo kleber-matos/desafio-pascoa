@@ -17,10 +17,10 @@ header {
 }
 
 .menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   background-color: rgba(0, 0, 0, 0.288);
 }
 
@@ -35,10 +35,10 @@ header {
 }
 
 .menu ul {
-  display: flex;
-  justify-content: space-evenly;
   width: 60%;
+  display: flex;
   max-width: 600px;
+  justify-content: space-evenly;
 }
 .menu a {
   color: orange;
@@ -50,15 +50,15 @@ header {
 }
 
 .slider {
+  height: 60vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 60vh;
 }
 
 .slider h2 {
-  color: white;
   width: 50vw;
+  color: white;
   font-size: 2.5em;
   max-width: 500px;
   margin-left: 1rem;
@@ -73,11 +73,11 @@ header {
   width: 10%;
   height: 5vh;
   border: none;
+  color: white;
   max-width: 50px;
   cursor: pointer;
   font-size: 1.2em;
   font-weight: bold;
-  color: white;
   background-color: orange;
 }
 
@@ -85,19 +85,19 @@ header {
 .produtos section {
   height: 60vh;
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .produtos div {
-  border: solid 1px black;
   width: 20vw;
   max-width: 350px;
   height: 45vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
+  border: solid 1px black;
   justify-content: space-evenly;
 }
 
@@ -117,20 +117,20 @@ header {
 }
 
 .local {
-  background-color: #8a493d;
   height: 65vh;
   display: flex;
   align-items: center;
+  background-color: #8a493d;
   justify-content: space-evenly;
 }
 
 .local div {
   width: 30vw;
   max-width: 450px;
-  text-align: center;
-  color: white;
   display: flex;
   flex-direction: column;
+  text-align: center;
+  color: white;
   justify-content: space-between;
   align-items: center;
   height: 50vh;
@@ -142,29 +142,29 @@ header {
 }
 
 .contato {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #f7f7f7;
 }
 
 .formulario {
+  width: 50%;
+  height: 50vh;
   display: flex;
+  max-width: 600px;
   flex-direction: column;
   justify-content: space-evenly;
-  width: 50%;
-  max-width: 600px;
-  height: 50vh;
   text-align: center;
   color: #f2b705;
 }
 
 .formulario input {
-  border: #f2b705 solid 1px;
   width: 100%;
   height: 5vh;
   padding-left: 5px;
+  border: #f2b705 solid 1px;
 }
 
 .formulario .mensagem {
@@ -177,41 +177,86 @@ header {
 }
 
 form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
   height: 30vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .formulario button {
-  background-color: #f2b705;
+  width: 40%;
   border: none;
   height: 5vh;
-  width: 40%;
   border-radius: 20px;
+  background-color: #f2b705;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   color: white;
   font-weight: bold;
   cursor: pointer;
 }
 
+/* Footer */
+
 footer {
-  background-color: #abaaaa;
-  display: flex;
-  justify-content: space-between;
-  align-content: center;
   height: 10vh;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  background-color: #abaaaa;
 }
 
 footer div {
   width: 30%;
   max-width: 350px;
   display: flex;
-  justify-content: space-evenly;
   align-items: center;
+  justify-content: space-evenly;
 }
 
 .logo {
   background-color: white;
+}
+
+/* Responsivo */
+@media (max-width: 700px) {
+  header {
+    font-size: 0.6em;
+  }
+
+  header img {
+    width: 40%;
+  }
+
+  .produtos div {
+    width: 80%;
+    height: 50vh;
+  }
+
+  .produtos section {
+    height: 160vh;
+    text-align: center;
+  }
+
+  .local {
+    flex-direction: column;
+    height: 170vh;
+  }
+
+  .local ul,
+  h3 {
+    width: 80vw;
+  }
+
+  .local img {
+    width: 60vw;
+  }
+
+  .formulario {
+    width: 90vw;
+  }
+
+  footer img {
+    width: 25%;
+  }
 }
